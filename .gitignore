@@ -1,0 +1,25 @@
+# Secrets (setup.py writes your API key here)
+.env
+_load_env.py
+_env_loader.pth
+_task.xml
+
+# Personal data created at runtime
+organizer.log
+behavior_graph.json
+semantic_index.json
+semantic_index.json.tmp
+move_history.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
