@@ -7,7 +7,7 @@ from watchdog.events import FileSystemEventHandler
 import agent
 import notifier
 
-DOWNLOADS = r"C:\Users\xboxf\Downloads"
+DOWNLOADS = str(Path.home() / "Downloads")
 STABLE_WAIT = 2.0
 POLL_INTERVAL = 0.5
 TEMP_EXTENSIONS = {".crdownload", ".part", ".tmp", ".download"}

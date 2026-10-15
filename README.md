@@ -32,13 +32,15 @@ Downloads ─► watcher.py ─► agent.py ◄─ graph_context.py ◄─┬─
    py -m pip install -r requirements.txt
    ```
 
-2. **Update the hard coded paths** to match your user folder:
+2. Folder locations are detected automatically from your Windows user profile:
 
-   | File | Constant | Default |
+   | File | Constant | Resolves to |
    |---|---|---|
-   | `agent.py` | `WATCH_ROOT` | `C:\Users\xboxf` |
-   | `watcher.py` | `DOWNLOADS` | `C:\Users\xboxf\Downloads` |
-   | `graph_semantic.py` | `SCAN_ROOT` | `C:\Users\xboxf\Documents` |
+   | `watcher.py` | `DOWNLOADS` | `%USERPROFILE%\Downloads` |
+   | `graph_semantic.py` | `SCAN_ROOT` | `%USERPROFILE%\Documents` |
+   | `agent.py` | `WATCH_ROOT` | `%USERPROFILE%` |
+
+   If your Downloads or Documents folder lives somewhere else (for example inside OneDrive), edit that constant.
 
 3. Register it to start at logon:
 

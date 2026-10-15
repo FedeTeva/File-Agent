@@ -6,7 +6,7 @@ from pathlib import Path
 from _keywords import extract_keywords
 
 SEMANTIC_INDEX = Path(__file__).parent / "semantic_index.json"
-SCAN_ROOT = r"C:\Users\xboxf\Documents"
+SCAN_ROOT = str(Path.home() / "Documents")
 MAX_DEPTH = 3
 
 

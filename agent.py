@@ -5,7 +5,7 @@ from pathlib import Path
 import anthropic
 import graph_context
 
-WATCH_ROOT = r"C:\Users\xboxf"
+WATCH_ROOT = str(Path.home())
 SKIP_DIRS = {"AppData", "$Recycle.Bin", ".git", "file_organizer"}
 
 client = anthropic.Anthropic()
